@@ -12,6 +12,8 @@
     <h1>COUNTER</h1>
     <h1 id="count"> 0 </h1>
  <button id="add-btn" onclick="add()">+</button>
+<button id="reset-btn" onclick="reset()">reset</button>
+ 
 
 </div>
 
@@ -22,6 +24,12 @@
   function add(){
     ++count
     count1.innerHTML=count
+
+  }
+
+  function reset(){
+    count1.innerHTML = 0
+    count=0
 
   }
 </script>
