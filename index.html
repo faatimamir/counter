@@ -11,27 +11,17 @@
     <div class="counter">
     <h1>COUNTER</h1>
     <h1 id="count"> 0 </h1>
- <button id="add-btn" onclick="add()">+</button>
+ <button class="clearfix" id="add-btn" onclick="add()">+</button>
 <button id="reset-btn" onclick="reset()">reset</button>
+<button id="'save-btn" onclick="save()">save</button>
+
  
 
 </div>
+<div>
+<p id="save-pre">previous counts : </p>
+</div>
 
-<script>
-     let count1 = document.getElementById("count")
- 
- let count=0
-  function add(){
-    ++count
-    count1.innerHTML=count
-
-  }
-
-  function reset(){
-    count1.innerHTML = 0
-    count=0
-
-  }
-</script>
+<script src="index.js"></script>
 </body>
 </html>
